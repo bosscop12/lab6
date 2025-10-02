@@ -1,0 +1,16 @@
+import 'package:flutter/material.dart';
+import './screen/screen2.dart'; // screen1.dart มี class FirstScreen
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter App',
+      home: FirstScreen(), // เรียก class ที่ถูกต้อง
+    );
+  }
+}
